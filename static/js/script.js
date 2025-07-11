@@ -1,9 +1,10 @@
 class InstagramGrid {
     constructor() {
         this.grid = document.getElementById('instagramGrid');
-        this.refreshIndicator = document.getElementById('refreshIndicator');
+        this.refreshBtn = document.getElementById('refreshBtn');
         this.loadPhotos();
         this.setupAutoRefresh();
+        this.setupRefreshButton();
     }
 
     async loadPhotos() {
@@ -176,11 +177,19 @@ class InstagramGrid {
     }
 
     showRefreshIndicator() {
-        this.refreshIndicator.classList.add('active');
+        this.refreshBtn.classList.add('loading');
+        this.refreshBtn.disabled = true;
     }
 
     hideRefreshIndicator() {
-        this.refreshIndicator.classList.remove('active');
+        this.refreshBtn.classList.remove('loading');
+        this.refreshBtn.disabled = false;
+    }
+
+    setupRefreshButton() {
+        this.refreshBtn.addEventListener('click', () => {
+            this.loadPhotos();
+        });
     }
 
     setupAutoRefresh() {

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Grid Widget</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=3">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=4">
 </head>
 <body>
     <div class="container">
-        <div class="refresh-indicator" id="refreshIndicator">
-            <span>🔄</span>
+        <div class="top-controls">
+            <button class="refresh-btn" id="refreshBtn">
+                <span class="refresh-icon">🔄</span>
+                <span class="refresh-text">Refresh</span>
+            </button>
         </div>
         <div class="instagram-grid" id="instagramGrid">
             <div class="loading">Loading photos...</div>
