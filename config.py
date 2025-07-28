@@ -3,5 +3,5 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-NOTION_TOKEN = os.getenv('NOTION_TOKEN')
-DATABASE_ID = os.getenv('DATABASE_ID')
+NOTION_TOKEN = os.getenv('EAFTatwwjungBPCJGo9lZCi9oJznYFHArYJXctJzFLXwhbI2KRb6Yvf1skLIlnZCExvFoxZA99pWtzfnCOzC2dLWe3hUWYNmWVVLr4F8f75aX0ze18gCsENJNt4Kjfs5qaFXe7jIhH8RZCzQbyYm0Y7iGD2hI0gDstRnznOGoTFSEsrVsj1PHOrqyChcfQLF8KqgMZATTvdaUp9ZAkxYSAMLML2vbEXVVOCIPEDpSMCjP4lSikzG9Kh4l97RRfnOMO73xHeVfAycHOjqZA0vggVSyRC9Ghy1u0YZD')
+DATABASE_ID = os.getenv('Arkay_stud')
